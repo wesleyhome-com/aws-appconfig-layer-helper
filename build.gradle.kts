@@ -56,7 +56,7 @@ dependencies {
     implementation("com.squareup.okhttp3:logging-interceptor:$okhttpVersion")
     testImplementation("io.mockk:mockk:1.13.12")
     testImplementation("com.willowtreeapps.assertk:assertk:0.28.1")
-    testImplementation(platform("org.junit:junit-bom:5.10.3"))
+    testImplementation(platform("org.junit:junit-bom:5.11.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation(kotlin("test"))
 }
