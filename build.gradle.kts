@@ -1,11 +1,11 @@
 plugins {
-    kotlin("jvm") version "2.0.10"
+    kotlin("jvm") version "2.0.21"
     `java-library`
     `maven-publish`
     signing
     id("io.github.gradle-nexus.publish-plugin") version "2.0.0"
     id("net.researchgate.release") version "3.0.2"
-    id("org.openapi.generator") version "7.7.0"
+    id("org.openapi.generator") version "7.9.0"
 }
 
 group = "com.wesleyhome.aws"
@@ -42,7 +42,7 @@ tasks.compileKotlin {
 }
 
 dependencies {
-    val jacksonVersion = "2.17.2"
+    val jacksonVersion = "2.18.0"
     val retrofitVersion = "2.11.0"
     val okhttpVersion = "4.12.0"
     implementation(kotlin("reflect"))
@@ -54,9 +54,9 @@ dependencies {
     implementation("org.openapitools:jackson-databind-nullable:0.2.6")
     implementation("com.squareup.okhttp3:okhttp:$okhttpVersion")
     implementation("com.squareup.okhttp3:logging-interceptor:$okhttpVersion")
-    testImplementation("io.mockk:mockk:1.13.12")
+    testImplementation("io.mockk:mockk:1.13.13")
     testImplementation("com.willowtreeapps.assertk:assertk:0.28.1")
-    testImplementation(platform("org.junit:junit-bom:5.11.0"))
+    testImplementation(platform("org.junit:junit-bom:5.11.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation(kotlin("test"))
 }
