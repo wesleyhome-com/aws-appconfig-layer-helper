@@ -44,7 +44,7 @@ tasks.compileKotlin {
 dependencies {
     val jacksonVersion = "2.17.2"
     val retrofitVersion = "2.11.0"
-    val okhttpVersion = "4.12.0"
+    val okhttpVersion = "5.4.0"
     implementation(kotlin("reflect"))
     implementation("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
